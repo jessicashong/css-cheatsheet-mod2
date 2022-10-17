@@ -1,0 +1,94 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+header {
+  margin: 20px;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: lightblue;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.headingBlurb {
+  font-size: 14px;
+  margin: 20px 50px
+}
+
+.snippet-cards {
+  color: lightblue;
+  margin: 20px;
+  
+  display: grid;
+}
+
+.flexbox-row {
+  grid-column-start: 1;
+}
+
+.flexbox-column {
+  grid-column-start: 2;
+}
+
+.css-grid-layout {
+  grid-column-start: 3;
+}
+
+h2 {
+  font-size: 24px;
+  border: solid 1px white;
+  border-radius: 5px;
+  position: relative;
+  margin-top: -20px;
+  height: 30px auto;
+  width: 150px auto;
+}
+
+#card {
+  border: dashed 1px white;
+  margin: 15px;
+
+}
+/* white-space wrap text */
+pre {
+  font-family: monospace;
+  color: white;
+  white-space: pre-wrap;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* three columns at 992px and above */
+@media screen and (min-width: 992px) {
+    .card {
+      width: 33%;
+    }
+}
+
+/* two columns at 768px or above */
+@media screen and (min-width: 768px) {
+        .card {
+          width: 50%;
+        }
+}        
+
+/* Mobile Devices: one column at anything under 768px */
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+}      
