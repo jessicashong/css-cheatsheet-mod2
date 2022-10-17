@@ -59,7 +59,8 @@ pre {
   font-family: monospace;
   color: white;
   white-space: pre-wrap;
-
+  overflow-x: auto;
+}
 
 
 
