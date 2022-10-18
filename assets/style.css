@@ -28,7 +28,7 @@ h1 {
   margin: 20px
 }
 
-div {
+.row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -36,13 +36,12 @@ div {
   margin: 20px 10px;
 }
 
-section {
+.column {
   border: dashed 1px white;
   margin: 20px;
   padding: 15px;
-  width: 30%;
-  flex: 1 0 auto;
   font-size: 14px;
+  max-width: 300px;
 }
 
 h2 {
