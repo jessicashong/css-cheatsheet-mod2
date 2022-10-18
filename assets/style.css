@@ -38,8 +38,8 @@ div {
 
 section {
   border: dashed 1px white;
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
+  padding: 15px;
   width: 30%;
   flex: 1 0 auto;
   font-size: 14px;
@@ -47,22 +47,25 @@ section {
 
 h2 {
   font-size: 24px;
+  padding: 3px;
   border: solid 1px white;
   border-radius: 5px;
   position: relative;
-  margin-top: -20px;
-  width: 80%;
+  margin-top: -30px;
+  width: 75%;
   ;
 }
 
 /* white-space wrap text */
-pre {
-  padding: 20px;
+code {
+  /* padding: 20px; */
   font-family: monospace;
   color: white;
-  white-space: pre-wrap;
-  overflow-x: auto;
-  /* text-align: center; */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
 }
 
 footer {
@@ -71,18 +74,20 @@ footer {
 
 
 
+/* Mobile Devices: one column at anything under 768px */
+@media screen and (min-width: 767px) {
+  .card {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}      
 
 
 /* three columns at 992px and above */
 @media screen and (min-width: 992px) {
     .card {
-      width: 50%;
+      max-width: 33.333%;
+      flex: 0 0 33.333%
     }
 }
 
-/* Mobile Devices: one column at anything under 768px */
-@media screen and (min-width: 767px) {
-  .card {
-    width: 100%;
-  }
-}      
